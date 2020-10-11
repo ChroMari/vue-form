@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before 
+  box-sizing: border-box
+
+html,
+body,
+.container
+  min-height: 100vh
+
+ul
+  padding: 0
+  margin: 0
+
+a
+  color: #2c3e50
+  text-decoration: none
+
+body
+  background: linear-gradient( 115deg,rgba(86, 216, 228, 1) 10%,rgba(159, 1, 234, 1) 90%);
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+input
+  color: #2b3e51
+  display: block
+  width: 100%
+  appearance: none
+  padding: 12px
+  border: 1px solid #cfd9db
+  background-color: #ffffff
+  border-radius: 0.25em
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08)
+  &:focus
+    outline: none
+    border-color: #2c3e50
+    box-shadow: 0 0 5px rgba(44, 151, 222, 0.2)
+
+.invalid input
+  border-color: #b83333 !important;
+
+#app
+  display: flex
+  justify-content: center
+  align-items: center
